@@ -176,7 +176,7 @@ function meProfile(){
         if (stat == null) {
             var stat = " - ";
         }
-        if (stat.length > 60) {
+        if (stat.length > 1000) {
             var stat = "Status Message is to long! Max 60 words";
         }
         if (tipe === 'profile') {
