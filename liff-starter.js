@@ -10,7 +10,7 @@ function getP(){
         document.getElementById('textx').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1588295307-ky7XZ55X?type=text&text=Your%20Text\n\n\ntype=text\ntext=your text'
+                text: 'line://app/1604506891-gLAxM4Ad?type=text&text=Your%20Text\n\n\ntype=text\ntext=your text'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -18,7 +18,7 @@ function getP(){
         document.getElementById('imagex').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1588295307-ky7XZ55X?type=image&img=https://wallpaperstudio10.com/static/wpdb/wallpapers/1000x563/168891.jpg\n\ntype => image img => Link (must be HTTPS)'
+                text: 'line://app/1604506891-gLAxM4Ad?type=image&img=https://wallpaperstudio10.com/static/wpdb/wallpapers/1000x563/168891.jpg\n\ntype => image img => Link (must be HTTPS)'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -26,7 +26,7 @@ function getP(){
         document.getElementById('videox').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1588295307-ky7XZ55X?type=video&ocu=https://tinyurl.com/y8og3or5&piu=https://images6.alphacoders.com/710/thumb-350-710132.png\n\ntype => video\nocu => video url piu => preview image'
+                text: 'line://app/1604506891-gLAxM4Ad?type=video&ocu=https://tinyurl.com/y8og3or5&piu=https://images6.alphacoders.com/710/thumb-350-710132.png\n\ntype => video\nocu => video url piu => preview image'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -34,15 +34,7 @@ function getP(){
         document.getElementById('audiox').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1588295307-ky7XZ55X?type=audio&link=https://platelets.fun/public/sounds/music.mp3'
-            }]).then(function () {
-                liff.closeWindow();
-            });
-        });
-        document.getElementById('mex').addEventListener('click', function () {
-            liff.sendMessages([{
-                type: 'text',
-                text: 'line://app/1588295307-ky7XZ55X?type=profile'
+                text: 'line://app/1604506891-gLAxM4Ad?type=audio&link=https://platelets.fun/public/sounds/music.mp3'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -50,7 +42,15 @@ function getP(){
         document.getElementById('stickerx').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'Animation: line://app/1588295307-ky7XZ55X?type=sticker&stk=anim&sid=32128231&pkg=3099312\n\nNo Animation: line://app/1588295307-ky7XZ55X?type=sticker&stk=noanim&sid=32128231&pkg=3099312\ntype => sticker stk => anim / noanim sid => sticker id\npkg => packages id'
+                text: 'Animation: line://app/1604506891-gLAxM4Ad?type=sticker&stk=anim&sid=32128231&pkg=3099312\nNo Animation: line://app/1604506891-gLAxM4Ad?type=sticker&stk=noanim&sid=32128231&pkg=3099312\ntype => sticker stk => anim / noanim sid => sticker id\npkg => packages id'
+            }]).then(function () {
+                liff.closeWindow();
+            });
+        });
+        document.getElementById('mex').addEventListener('click', function () {
+            liff.sendMessages([{
+                type: 'text',
+                text: 'line://app/1604506891-gLAxM4Ad?type=profile'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -60,6 +60,7 @@ function getP(){
         makeImage();
         makeVideo();
         makeAudio();
+        makeFlex();
         makeSticker();
         meProfile();
     }
@@ -77,7 +78,7 @@ function getParameterByName(name, url) {
 function getProfile(){
     liff.getProfile().then(function (profile) {
         document.getElementById('userid').textContent = 'Hai  ' + profile.displayName;
-        document.getElementById('main').src = profile.pictureUrl;        
+        document.getElementById('main').src = profile.pictureUrl;
         document.getElementById('close').addEventListener('click', function () {
             liff.closeWindow();
         });
@@ -148,17 +149,20 @@ function makeSticker(){
             ep = "/IOS/sticker@2x.png";
         }
         liff.sendMessages([{
-          type: "template",
-          altText: "Sticker",
-          template: {
-             type: "image_carousel",
-             columns: [{
-                 imageUrl: "https://stickershop.line-scdn.net/stickershop/v1/sticker/"+sid+ep,
-                 action: {
-                     type: "uri",
-                     uri: "http://line.me/ti/p/%40175qduzr"}}
-                          ]
+            type: "template",
+            altText: "Flex",
+            template: {
+                type: "image_carousel",
+                columns: [
+                    {
+                        imageUrl: "https://i.imgur.com/X15vdl5.jpg",
+                        action: {
+                            type: "uri",
+                            uri: "https://i.imgur.com/X15vdl5.jpg"
                         }
+                    }
+                ]
+            }
         }]).then(function () {
             liff.closeWindow();
         });
@@ -172,8 +176,8 @@ function meProfile(){
         if (stat == null) {
             var stat = " - ";
         }
-        if (stat.length > 100) {
-            var stat = "MAX STATUS MESSAGE YUDHA 100 WORDS";
+        if (stat.length > 60) {
+            var stat = "Status Message is to long! Max 60 words";
         }
         if (tipe === 'profile') {
             liff.sendMessages([{
@@ -190,7 +194,7 @@ function meProfile(){
                         {
                             type:"uri",
                             label:"Me",
-                            uri:"line://app/1588295307-ky7XZ55X?type=profile"
+                            uri:"line://app/1602687308-GXq4Vvk9?type=profile"
                         }
                     ]
                 }
@@ -199,4 +203,29 @@ function meProfile(){
             });
         }
     });
+}
+
+function makeFlex() {
+    var tipe = getParameterByName('type');
+    if (tipe === 'flex') {
+        // var stk = getParameterByName('stk')
+        liff.sendMessages([{
+            type: "template",
+            altText: "Flex",
+            template: {
+                type: "image_carousel",
+                columns: [
+                    {
+                        imageUrl: "https://i.imgur.com/X15vdl5.jpg",
+                        action: {
+                            type: "uri",
+                            uri: "https://i.imgur.com/X15vdl5.jpg"
+                        }
+                    }
+                ]
+            }
+        }]).then(function () {
+            liff.closeWindow();
+        });
+    }
 }
