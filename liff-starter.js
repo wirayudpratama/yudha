@@ -18,7 +18,7 @@ function getP(){
         document.getElementById('imagex').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1602687308-GXq4Vvk9?type=image&img=http://imgur.com/a/NMWwbMJ.jpg\n\ntype => image img => Link (must be HTTPS)'
+                text: 'line://app/1602687308-GXq4Vvk9?type=image&img=http://i.imgur.com/AuXW3K4.jpg\n\ntype => image img => Link (must be HTTPS)'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -155,7 +155,7 @@ function makeSticker(){
                 type: "image_carousel",
                 columns: [
                     {
-                        imageUrl: "http://imgur.com/a/NMWwbMJ.jpg",
+                        imageUrl: "http://i.imgur.com/AuXW3K4.jpg",
                         action: {
                             type: "uri",
                             uri: "line://ti/p/%40175qduzr"
@@ -216,7 +216,7 @@ function makeFlex() {
                 type: "image_carousel",
                 columns: [
                     {
-                        imageUrl: "http://imgur.com/a/NMWwbMJ.jpg",
+                        imageUrl: "http://i.imgur.com/AuXW3K4.jpg",
                         action: {
                             type: "uri",
                             uri: "line://ti/p/%40175qduzr"
