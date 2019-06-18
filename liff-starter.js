@@ -18,7 +18,7 @@ function getP(){
         document.getElementById('imagex').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1602687308-GXq4Vvk9?type=image&img=http://i.imgur.com/AuXW3K4.jpg\n\ntype =>image\nimg => Link (must be HTTPS)'
+                text: 'line://app/1602687308-GXq4Vvk9?type=image&img=https://images4.alphacoders.com/551/551263.png\n\ntype =>image\nimg => Link (must be HTTPS)'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -26,7 +26,7 @@ function getP(){
         document.getElementById('videox').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1602687308-GXq4Vvk9?type=video&ocu=https://bit.ly/2WLcyS2&piu=http://i.imgur.com/AuXW3K4.png\n\ntype => video\nnocu => video url\npiu => preview image'
+                text: 'line://app/1602687308-GXq4Vvk9?type=video&ocu=https://tinyurl.com/y75g66vq&piu=https://images2.alphacoders.com/486/486957.jpg\n\ntype => video\nnocu => video url\npiu => preview image'
             }]).then(function () {
                 liff.closeWindow();
             });
