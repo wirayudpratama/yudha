@@ -10,7 +10,7 @@ function getP(){
         document.getElementById('textx').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1604506891-gLAxM4Ad?type=text&text=Your%20Text\n\n\ntype=text\ntext=your text'
+                text: 'line://app/1588295307-DByx6ddx?type=text&text=Your%20Text\n\n\ntype=text\ntext=your text'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -18,7 +18,7 @@ function getP(){
         document.getElementById('imagex').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1604506891-gLAxM4Ad?type=image&img=https://wallpaperstudio10.com/static/wpdb/wallpapers/1000x563/168891.jpg\n\ntype => image img => Link (must be HTTPS)'
+                text: 'line://app/1588295307-DByx6ddx?type=image&img=http://imgur.com/a/NMWwbMJ.jpg\n\ntype => image img => Link (must be HTTPS)'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -26,7 +26,7 @@ function getP(){
         document.getElementById('videox').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1604506891-gLAxM4Ad?type=video&ocu=https://tinyurl.com/y8og3or5&piu=https://images6.alphacoders.com/710/thumb-350-710132.png\n\ntype => video\nocu => video url piu => preview image'
+                text: 'line://app/1588295307-DByx6ddx?type=video&ocu=https://tinyurl.com/y8og3or5&piu=https://images6.alphacoders.com/710/thumb-350-710132.png\n\ntype => video\nocu => video url piu => preview image'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -34,7 +34,7 @@ function getP(){
         document.getElementById('audiox').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1604506891-gLAxM4Ad?type=audio&link=https://platelets.fun/public/sounds/music.mp3'
+                text: 'line://app/1588295307-DByx6ddx?type=audio&link=https://platelets.fun/public/sounds/music.mp3'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -42,7 +42,7 @@ function getP(){
         document.getElementById('stickerx').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'Animation: line://app/1604506891-gLAxM4Ad?type=sticker&stk=anim&sid=32128231&pkg=3099312\nNo Animation: line://app/1604506891-gLAxM4Ad?type=sticker&stk=noanim&sid=32128231&pkg=3099312\ntype => sticker stk => anim / noanim sid => sticker id\npkg => packages id'
+                text: 'Animation: line://app/1588295307-DByx6ddx?type=sticker&stk=anim&sid=32128231&pkg=3099312\n\nNo Animation: line://app/1588295307-DByx6ddx?type=sticker&stk=noanim&sid=32128231&pkg=3099312\n\ntype => sticker stk => anim / noanim sid => sticker id\npkg => packages id'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -50,7 +50,7 @@ function getP(){
         document.getElementById('mex').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1604506891-gLAxM4Ad?type=profile'
+                text: 'line://app/1588295307-DByx6ddx?type=profile'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -155,10 +155,10 @@ function makeSticker(){
                 type: "image_carousel",
                 columns: [
                     {
-                        imageUrl: "https://i.imgur.com/X15vdl5.jpg",
+                        imageUrl: "http://imgur.com/a/NMWwbMJ.jpg",
                         action: {
                             type: "uri",
-                            uri: "https://i.imgur.com/X15vdl5.jpg"
+                            uri: "line://ti/p/%40175qduzr"
                         }
                     }
                 ]
@@ -194,7 +194,7 @@ function meProfile(){
                         {
                             type:"uri",
                             label:"Me",
-                            uri:"line://app/1602687308-GXq4Vvk9?type=profile"
+                            uri:"line://app/1588295307-DByx6ddx?type=profile"
                         }
                     ]
                 }
@@ -216,10 +216,10 @@ function makeFlex() {
                 type: "image_carousel",
                 columns: [
                     {
-                        imageUrl: "https://i.imgur.com/X15vdl5.jpg",
+                        imageUrl: "http://imgur.com/a/NMWwbMJ.jpg",
                         action: {
                             type: "uri",
-                            uri: "https://i.imgur.com/X15vdl5.jpg"
+                            uri: "line://ti/p/%40175qduzr"
                         }
                     }
                 ]
