@@ -10,7 +10,7 @@ function getP(){
         document.getElementById('textx').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1588295307-ky7XZ55X?type=text&text=Yudha%20Ganteng\n\n\ntype=text\ntext=your text'
+                text: atob('bGluZTovL2FwcC8xNTg4Mjk1MzA3LWt5N1haNTVYP3R5cGU9dGV4dCZ0ZXh0PVl1ZGhhJTIwR2FudGVuZwoKCnR5cGU9dGV4dAp0ZXh0PXlvdXIgdGV4dA==')
             }]).then(function () {
                 liff.closeWindow();
             });
