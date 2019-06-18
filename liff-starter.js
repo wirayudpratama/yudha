@@ -10,7 +10,7 @@ function getP(){
         document.getElementById('textx').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1602687308-GXq4Vvk9?type=text&text=Your%20Text\n\n\ntype=text\ntext=your text'
+                text: 'line://app/1602687308-GXq4Vvk9?type=text&text=Yudha%20Ganteng\n\n\ntype=text\ntext=your text'
             }]).then(function () {
                 liff.closeWindow();
             });
