@@ -3,36 +3,11 @@ html{
 }
 
 body {
-  align-items: center;
-	background-color: #202020;
-	background-image: radial-gradient(10% 100% ellipse at bottom center, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 100%);
-  text-align:center;
-  margin-top:10vw;
-	margin: 0;
-	padding: 0;
-}
-
-.wrap {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -86px;
-	margin-left: -89px;
-	text-align: center;
-}
-
-{
-	-webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-	-moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-	-ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-	-o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-	display: block;
-	margin: 20px auto;
-	max-width: 180px;
-	text-decoration: none;
-	border-radius: 4px;
-	padding: 20px 30px;
+  background: -webkit-linear-gradient(200deg, #00C4FF, #9D1BB2);
+  background: linear-gradient(205deg, #00C4FF, #9D1BB2);
+  height: 100vh;
+  margin: 0; 
+  padding: 0;
 }
 
 .dark {
@@ -40,12 +15,10 @@ body {
 }
 
 .flex {
-  color: rgba(30, 22, 54, 0.6);
-  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
-}
-
-.flex:hover {
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #imag { 
@@ -54,71 +27,103 @@ body {
 }
 
 .button {
-    display:inline-block;
-  position:relative;
-  padding: 8px 42px;
-  border:none;
-  color:#fda;
-  font-family:'Dancing Script',serif;
-  font-style:italic;
-  font-size:16px;
-  text-decoration:none;
-  margin: 1px 1px;
-  transition: color 0.4s
+    background-color: #bababa; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin: 1px 1px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .button6 {
-  color: rgba(30, 22, 54, 0.6);
-  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+    background-color: #212121;
+    color: white;
+    width: 250px;
+    border-radius: 6px;
+    border: 2px solid #212121;
 }
 
 .button6:hover {
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    background-color: transparent;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .button5 {
-  color: rgba(30, 22, 54, 0.6);
-  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+    background-color: #3f3f3f;
+    color: black;
+    width: 250px;
+    border-radius: 6px;
+    border: 2px solid #3f3f3f;
 }
 
 .button5:hover {
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .button4 {
-  color: rgba(30, 22, 54, 0.6);
-  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+    background-color: #555555;
+    color: white;
+    width: 250px;
+    border-radius: 6px;
+    border: 2px solid #555555;
 }
 
 .button4:hover {
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    background-color: transparent;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .button3 {
-  color: rgba(30, 22, 54, 0.6);
-  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+    background-color: #7c7c7c;
+    color: black;
+    width: 250px;
+    border-radius: 6px;
+    border: 2px solid #7c7c7c;
 }
 
 .button3:hover {
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .button2 {
-  color: rgba(30, 22, 54, 0.6);
-  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+    background-color: #a5a5a5;
+    color: white;
+    width: 250px;
+    border-radius: 6px;
+    border: 2px solid #a5a5a5;
 }
 
 .button2:hover {
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    background-color: transparent;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .button1 {
-  color: rgba(30, 22, 54, 10);
-  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+    background-color: #cccccc;
+    color: black;
+    width: 250px;
+    border-radius: 6px;
+    border: 2px solid #cccccc;
 }
 
 .button1:hover {
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .responsive {
