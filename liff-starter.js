@@ -18,7 +18,7 @@ function getP(){
         document.getElementById('imagex').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1602687308-GXq4Vvk9?type=image&img=http://i.imgur.com/AuXW3K4.jpg\n\ntype =>\nimage img => Link (must be HTTPS)'
+                text: 'line://app/1602687308-GXq4Vvk9?type=image&img=http://i.imgur.com/AuXW3K4.jpg\n\ntype =>image\nimg => Link (must be HTTPS)'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -26,7 +26,7 @@ function getP(){
         document.getElementById('videox').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1602687308-GXq4Vvk9?type=video&ocu=https://bit.ly/2WLcyS2&piu=http://i.imgur.com/AuXW3K4.png\n\ntype => video\nocu => video url piu => preview image'
+                text: 'line://app/1602687308-GXq4Vvk9?type=video&ocu=https://bit.ly/2WLcyS2&piu=http://i.imgur.com/AuXW3K4.png\n\ntype => video\nnocu => video url\npiu => preview image'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -34,7 +34,7 @@ function getP(){
         document.getElementById('audiox').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: 'line://app/1602687308-GXq4Vvk9?type=audio&link=https://platelets.fun/public/sounds/music.mp3'
+                text: 'line://app/1602687308-GXq4Vvk9?type=audio&link=https://platelets.fun/public/sounds/music.mp3 type => audio\nlink => link audio (must be HTTPS)'
             }]).then(function () {
                 liff.closeWindow();
             });
