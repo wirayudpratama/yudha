@@ -7,7 +7,7 @@ window.onload = function (e) {
 function getP(){
     var tipe = getParameterByName('type')
     if (!tipe) {
-        document.getElementById('textx').addEventListener('click', function () {
+        document.getElementById('text').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
                 text: 'line://app/1588295307-ky7XZ55X?type=text&text=Yudha%20Ganteng\n\n\ntype=text\ntext=your text'
@@ -15,7 +15,7 @@ function getP(){
                 liff.closeWindow();
             });
         });
-        document.getElementById('imagex').addEventListener('click', function () {
+        document.getElementById('image').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
                 text: 'line://app/1588295307-ky7XZ55X?type=image&img=https://wallpaperstudio10.com/static/wpdb/wallpapers/1000x563/168891.jpg\n\ntype => image img => Link (must be HTTPS)'
@@ -23,7 +23,7 @@ function getP(){
                 liff.closeWindow();
             });
         });
-        document.getElementById('videox').addEventListener('click', function () {
+        document.getElementById('video').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
                 text: 'line://app/1588295307-ky7XZ55X?type=video&ocu=https://tinyurl.com/y8og3or5&piu=https://images6.alphacoders.com/710/thumb-350-710132.png\n\ntype => video\nocu => video url piu => preview image'
@@ -31,7 +31,7 @@ function getP(){
                 liff.closeWindow();
             });
         });
-        document.getElementById('audiox').addEventListener('click', function () {
+        document.getElementById('audio').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
                 text: 'line://app/1588295307-ky7XZ55X?type=audio&link=https://platelets.fun/public/sounds/music.mp3'
@@ -39,7 +39,7 @@ function getP(){
                 liff.closeWindow();
             });
         });
-        document.getElementById('mex').addEventListener('click', function () {
+        document.getElementById('me').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
                 text: 'line://app/1588295307-ky7XZ55X?type=profile'
@@ -47,7 +47,7 @@ function getP(){
                 liff.closeWindow();
             });
         });
-        document.getElementById('stickerx').addEventListener('click', function () {
+        document.getElementById('big sticker').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
                 text: 'Animation: line://app/1588295307-ky7XZ55X?type=sticker&stk=anim&sid=32128231&pkg=3099312\n\nNo Animation: line://app/1588295307-ky7XZ55X?type=sticker&stk=noanim&sid=32128231&pkg=3099312\ntype => sticker stk => anim / noanim sid => sticker id\npkg => packages id'
